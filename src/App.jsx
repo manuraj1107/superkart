@@ -2,7 +2,6 @@ import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom"
 import ProductList from "./pages/productList/ProductList"
 import Navbar from "./components/navbar/Navbar"
 import LeftBar from "./components/leftBar/LeftBar"
-import Footer from "./components/footer/Footer"
 import './index.scss'
 
 function App() {

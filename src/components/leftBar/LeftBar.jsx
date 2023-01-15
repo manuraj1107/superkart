@@ -57,7 +57,7 @@ const LeftBar = () => {
                  return(
                  <button key={index} type="button" name='ideal'
                  value={curElem}
-                 onClick={updateFilterValue} style={{backgroundColor: 'transparent',padding: '6px 16px', textAlign:"left", fontSize:'14px', border:'none', }}
+                 onClick={updateFilterValue} style={{backgroundColor: 'transparent',padding: '6px 16px', textAlign:"left", fontSize:'14px', border:'none',cursor:'pointer' }}
                  >{curElem}</button>
       
                  )
@@ -75,7 +75,7 @@ const LeftBar = () => {
                   return (
                     <button key={index} type="button" name='brand'
                  value={curElem}
-                 onClick={updateFilterValue} style={{backgroundColor: 'transparent',padding: '6px 16px', textAlign:"left", fontSize:'12px', border:'1px solid lightblue',width:'max-content', borderRadius:'30px',  }}
+                 onClick={updateFilterValue} style={{backgroundColor: 'transparent',padding: '6px 16px', textAlign:"left", fontSize:'12px', border:'1px solid lightblue',width:'max-content', borderRadius:'30px', cursor:'pointer' }}
                  >&#10005; Clear all </button>
                   )
                  }
@@ -83,7 +83,7 @@ const LeftBar = () => {
                  return(
                  <button key={index} type="button" name='brand'
                  value={curElem}
-                 onClick={updateFilterValue} style={{backgroundColor: 'transparent',padding: '6px 16px', textAlign:"left", fontSize:'14px', border:'none', }}
+                 onClick={updateFilterValue} style={{backgroundColor: 'transparent',padding: '6px 16px', textAlign:"left", fontSize:'14px', border:'none', cursor:'pointer'}}
                  >{curElem}</button>
       
                  )
@@ -95,7 +95,7 @@ const LeftBar = () => {
         </div>
         <hr />
         <div className="menu">
-          <span onClick={(e) => setSizeActive(!sizeActive)}>{sizeActive? (<p style={{display:'flex', alignItems:'center'}}><ArrowUp />SIZE</p>) :(<p style={{display:'flex', alignItems:'center'}}><ArrowRight />SIZE</p>)}</span>
+          <span onClick={(e) => setSizeActive(!sizeActive)}>{sizeActive? (<p style={{display:'flex', alignItems:'center'}}><ArrowUp />SIZE</p>) :(<p style={{display:'flex', alignItems:'center',}}><ArrowRight />SIZE</p>)}</span>
 
           {
            sizeActive && (sizeData.map((curSize, index) => {
@@ -103,7 +103,7 @@ const LeftBar = () => {
                   return (
                     <button key={index} type="button" name='size'
                  value={curSize}
-                 onClick={updateFilterValue} style={{backgroundColor: 'transparent',padding: '6px 16px', textAlign:"left", fontSize:'12px', border:'1px solid lightblue',width:'max-content', borderRadius:'30px',  }}
+                 onClick={updateFilterValue} style={{backgroundColor: 'transparent',padding: '6px 16px', textAlign:"left", fontSize:'12px', border:'1px solid lightblue',width:'max-content', borderRadius:'30px',  cursor:'pointer'}}
                  >&#10005; Clear all </button>
                   )
                  }
@@ -112,7 +112,7 @@ const LeftBar = () => {
                 
                 <button key={index} type="button" name='size'
                 value={curSize}
-                onClick={updateFilterValue} style={{backgroundColor: 'transparent',padding: '6px 16px', textAlign:"left", fontSize:'14px', border:'none', }}
+                onClick={updateFilterValue} style={{backgroundColor: 'transparent',padding: '6px 16px', textAlign:"left", fontSize:'14px', border:'none',cursor:'pointer' }}
                 >{curSize}</button>
      
                 )
