@@ -1,0 +1,26 @@
+.price-filter{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+     p{
+      font-size: 14px;
+      font-weight: 600;
+     }
+     .filter{
+         display: block;
+         padding: 0px 4px 1.5px 4px;
+         cursor: pointer;
+         font-size: 14px;
+         font-weight: 400;
+     }
+
+     .filter_blue{
+        display: block;
+        padding: 0px 4px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        border-bottom: 1.4px solid #2874F0;
+        color: #2874F0;  
+    }
+ }
