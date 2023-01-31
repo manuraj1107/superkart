@@ -37,7 +37,7 @@ const Sort = () => {
         <p>Sort By</p>
         <form className='price-filter' action='#' onClick={sorting}>
             <option className={clicked? 'filter_blue': 'filter'} value="lowest" onClick={lowestClick}>Price -- Low to High</option>
-            <option className={clicked2? 'filter_blue': 'filter'} value="highest" onClick={highestClick}>Price -- Low to High</option>
+            <option className={clicked2? 'filter_blue': 'filter'} value="highest" onClick={highestClick}>Price -- High to Low</option>
             
         </form>
       </div>
